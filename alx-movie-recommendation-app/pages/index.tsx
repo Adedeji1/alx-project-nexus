@@ -4,6 +4,7 @@ import MovieCard from "@/components/movie/MovieCard";
 import Loader from "@/components/common/Loader";
 import ErrorState from "@/components/common/ErrorState";
 import { Movie } from "@/interface";
+import Layout from "@/components/layout/Layout";
 
 export default function Home() {
   const [movies, setMovies] = useState<Movie[]>([]);
