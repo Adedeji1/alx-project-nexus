@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function MovieDetail({ movie }: { movie: Movie }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <Image
+      <img
         src={`${process.env.NEXT_PUBLIC_TMDB_IMAGE_URL}${movie.poster_path}`}
         className="rounded-xl"
         alt={movie.title}

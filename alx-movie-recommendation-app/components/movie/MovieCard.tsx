@@ -6,7 +6,7 @@ export default function MovieCard({ movie }: { movie: Movie }) {
   return (
     <Link href={`/movie/${movie.id}`}>
       <div className="transform hover:scale-105 transition cursor-pointer">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_TMDB_IMAGE_URL}${movie.poster_path}`}
           alt={movie.title}
           className="rounded-lg"

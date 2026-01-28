@@ -40,7 +40,57 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
 
 
-# Folder Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Movie Recommendation App
+
+## Project Overview
+
+This project is a **Movie Recommendation Web Application** built with **Next.js** that allows users to browse popular movies, view detailed information about each movie, and add movies to a personal watchlist, This Project is done as a Graduation requirement for the AlX Frontend-ProDev criteria.
+
+The application consumes real movie data from **The Movie Database (TMDB) API** and is designed with a **Netflix-style desktop layout**, scaled from a mobile-first design concept.
+
+This project was developed as part of the **ALX Nexus Project** to demonstrate frontend development skills, API integration, and clean project structure.
+
+---
+
+## Features
+
+- View popular movies fetched from TMDB
+- Netflix-style responsive movie grid
+- View detailed information for each movie
+- Add movies to a watchlist
+- Persist watchlist using browser localStorage
+- Loading and error handling states
+- Optimized images using Next.js Image component
+
+---
+
+## Tech Stack
+
+- **Next.js (Pages Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **TMDB API**
+- **LocalStorage** (for watchlist persistence)
+
+## Folder Structure
+
 alx-movie-recommendation-app/
 │
 ├── components/
@@ -66,5 +116,6 @@ alx-movie-recommendation-app/
 ├── styles/
 │   └── globals.css
 │
+├── .env.local
+├── next.config.js
 ├── README.md
-└── .env.local
