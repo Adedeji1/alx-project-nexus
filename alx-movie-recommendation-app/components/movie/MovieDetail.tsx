@@ -1,5 +1,4 @@
 import { Movie } from "@/interface";
-import Image from "next/image";
 
 export default function MovieDetail({ movie }: { movie: Movie }) {
   return (
