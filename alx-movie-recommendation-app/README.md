@@ -110,8 +110,8 @@ alx-movie-recommendation-app/
 ├── services/
 │   └── movieApi.ts
 │
-├── types/
-│   └── movie.ts
+├── interface/
+│   └── index.ts
 │
 ├── styles/
 │   └── globals.css
