@@ -23,3 +23,15 @@ export async function getPopularMovies(): Promise<Movie[]> {
 export async function getMovieById(id: string): Promise<Movie> {
   return fetchFromTMDB(`/movie/${id}`);
 }
+export async function searchMovies(query: string) {
+  const res = await fetch(
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}`
+  );
+
+  if (!res.ok) {
+    throw new Error("Search failed");
+  }
+
+  const data = await res.json();
+  return data.results;
+}
