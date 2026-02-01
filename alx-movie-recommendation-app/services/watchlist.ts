@@ -6,7 +6,7 @@ export function getWatchlist(): Movie[] {
   return JSON.parse(localStorage.getItem(KEY) || "[]");
 }
 
-export function addToWatchlist(movie: Movie) {
+export function addToWatchlist (movie: Movie) {
   const current = getWatchlist();
   const exists = current.find((m) => m.id === movie.id);
 
