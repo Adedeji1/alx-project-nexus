@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Movie } from "@/interface";
+
 import { addToWatchlist } from "@/services/watchList";
 
 export default function MovieDetail({ movie }: { movie: Movie }) {
